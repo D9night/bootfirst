@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>伯乐院</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+        .container {
+            border: 1px groove black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<form action="tologin">
+<div>
+    <div>
+        <h1>welcome，please login</h1>
+    </div>
+        <br>
+        addressName：<input type="text" id="nickname"/></br>
+        password：<input type="password" id="pwd4">
+            <input type="checkbox" onchange="changePwd4Visible()" id="cb4">orshow</br>
+        <input type="button" value="提交" onclick="submit(this)">
+        </div>
+    </div>
+</div>
+</form>
+</body>
+<script type="text/javascript">
+    var pwd4 = document.getElementById("pwd4");
+    function changePwd4Visible() {
+        pwd4.type = event.target.checked ? "text" : "password";
+    }
+    function submit(obj){
+        obj.parent.sumbit();
+    }
+</script>
+</html>
