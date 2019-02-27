@@ -17,6 +17,7 @@
 *.iml
 *.cmd
 mvnw
+.mvn
 
 ### NetBeans ###
 /nbproject/private/
